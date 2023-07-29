@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>聊天機器人by佑謙</title>
+</head>
+<body>
+
+    <h1>聊天機器人by佑謙</h1>
+
+    <!-- 輸入框 -->
+    <label for="inputText">我想說：</label>
+    <input type="text" id="inputText">
+    <button onclick="showText()">答案</button>
+
+    <!-- 顯示文字的地方 -->
+    <p id="outputText"></p>
+
+    <script>
+        function showText() {
+            // 獲取輸入框的值
+            var inputText = document.getElementById("inputText").value;
+            
+            // 將輸入的文字顯示在下方的p標籤中
+            var outputTextElement = document.getElementById("outputText");
+            if(inputText ==="你好"){
+                outputTextElement.innerText = "你好，我是你的聊天機器人";
+            }
+            else if(inputText ==="大家好"){
+                outputTextElement.innerText = "HI，我是你的聊天機器人，我可以幫你解答Arduino的問題例如：Arduino led";
+            }
+            else if(inputText ==="你好嗎"){
+                outputTextElement.innerText = "我很好，我可以幫你解答Arduino的問題例如：我如何不使用電阻製作按鈕?";
+            }
+            else if(inputText ==="大家好"){
+                outputTextElement.innerText = "HI，我是你的聊天機器人，我可以幫你解答Arduino的問題例如：Arduino led";
+            }
+            else if(inputText ==="嗨"){
+                outputTextElement.innerText = "嗨，你想說甚麼?";
+            }
+            else if(inputText ==="今天好嗎"){
+                outputTextElement.innerText = "我今天很好，你可以說出Arduino的問題例如： Arduino 類比引腳 等...";
+            }
+            else if(inputText ==="你好"){
+                outputTextElement.innerText = "好好好";
+            }
+            else if(inputText ==="你是笨蛋嗎"){
+                outputTextElement.innerText = "已開啟鬥嘴模式";
+            }
+            else if(inputText ==="白癡"){
+                outputTextElement.innerText = "不要亂講";
+            }
+            else if(inputText ==="幹"){
+                outputTextElement.innerText = "...";
+            }
+            else if(inputText ==="沒有用的傢伙"){
+                outputTextElement.innerText = "天生我材必有用";
+            }
+            else if(inputText ==="誰製造你的爛死了"){
+                outputTextElement.innerText = "創世者OK?";
+            }
+            else if(inputText ==="三小"){
+                outputTextElement.innerText = "不要亂講";
+            }
+            else if(inputText ==="王八蛋"){
+                outputTextElement.innerText = "已開啟鬥嘴模式";
+            }
+            else if(inputText ==="哇靠"){
+                outputTextElement.innerText = "cow=牛";
+            }
+            else if(inputText ==="你真棒"){
+                outputTextElement.innerText = "謝謝稱讚";
+            }
+            else if(inputText ==="你好棒"){
+                outputTextElement.innerText = "謝謝稱讚";
+            }
+            else if(inputText ==="還不錯嘛"){
+                outputTextElement.innerText = "謝謝";
+            }
+            else if(inputText ==="1+1"){
+                outputTextElement.innerText = "=3喔不對=1";
+            }
+            else if(inputText ==="我如何不使用電阻製作按鈕?"){
+                outputTextElement.innerText = "可以使用Arduino的A pin製作button，以下是網頁程式碼：你可以去 https://docs.google.com/document/d/1Gni4kCBZTHwH8-bLjz5alwJzhAurszf9cL-deMwSSsk/edit";
+            }
+            else if(inputText ==="我如何不使用電阻製作按鈕"){
+                outputTextElement.innerText = "可以使用Arduino的A pin製作button，以下是網頁程式碼：你可以去 https://docs.google.com/document/d/1Gni4kCBZTHwH8-bLjz5alwJzhAurszf9cL-deMwSSsk/edit";
+            }
+            else if(inputText ==="不使用電阻製作按鈕"){
+                outputTextElement.innerText = "可以使用Arduino的A pin製作button，以下是網頁程式碼：你可以去 https://docs.google.com/document/d/1Gni4kCBZTHwH8-bLjz5alwJzhAurszf9cL-deMwSSsk/edit";
+            }
+            else if(inputText ==="有辦法不用電阻製作按鈕嗎"){
+                outputTextElement.innerText = "可以使用Arduino的A pin製作button，以下是網頁程式碼：你可以去 https://docs.google.com/document/d/1Gni4kCBZTHwH8-bLjz5alwJzhAurszf9cL-deMwSSsk/edit";
+            }
+            else if(inputText ==="做按鈕不用電阻"){
+                outputTextElement.innerText = "可以使用Arduino的A pin製作button，以下是網頁程式碼：你可以去 https://docs.google.com/document/d/1Gni4kCBZTHwH8-bLjz5alwJzhAurszf9cL-deMwSSsk/edit";
+            }
+            else if(inputText ==="如何控制無刷馬達?"){
+                outputTextElement.innerText = "可以使用Arduino的PWM訊號控制搜索：Arduino servo即可查閱資料";
+            }
+            else if(inputText ==="無刷馬達是用什麼訊號控制的"){
+                outputTextElement.innerText = "可以使用Arduino的PWM訊號控制搜索：Arduino servo即可查閱資料";
+            }
+            else if(inputText ==="無刷馬達是什麼如何控制"){
+                outputTextElement.innerText = "可以使用Arduino的PWM訊號控制搜索：Arduino servo即可查閱資料";
+            }
+            else if(inputText ==="KV意思"){
+                outputTextElement.innerText = "電壓每升高1伏特，轉速增加的數值";
+            }
+            else if(inputText ==="kv意思"){
+                outputTextElement.innerText = "電壓每升高1伏特，轉速增加的數值";
+            }
+            else if(inputText ==="Arduino led"){
+                outputTextElement.innerText = "可以參考： https://blog.jmaker.com.tw/arduino-tutorials-3/";
+            }
+            else if(inputText ==="Arduino led控制"){
+                outputTextElement.innerText = "可以參考： https://blog.jmaker.com.tw/arduino-tutorials-3/";
+            }
+            else if(inputText ==="Arduino 可變電阻"){
+                outputTextElement.innerText = "可以參考： https://sites.google.com/view/rayarduino/%E4%BC%BA%E6%9C%8D%E9%A6%AC%E9%81%94%E5%92%8C%E5%8F%AF%E8%AE%8A%E9%9B%BB%E9%98%BB";
+            }
+            else if(inputText ==="Arduino 伺服馬達"){
+                outputTextElement.innerText = "程式： https://blog.jmaker.com.tw/arduino-servo-sg90/";
+            }
+            else if(inputText ==="Arduino 靈感"){
+                outputTextElement.innerText = "可以使用Arduino： 1.製作發球機 2.hc05藍芽遙控車 3.無人機 4.機器手臂 5.手槍";
+            }
+            else if(inputText ==="Arduino 魔術"){
+                outputTextElement.innerText = "Arduino可以配合無刷馬達製作氣球懸浮魔術以白努力定律為基礎以氣球懸浮";
+            }
+            else if(inputText ==="Arduino 紅外線"){
+                outputTextElement.innerText = "要使用Arduino製作紅外線遙控發射是一項艱難的任務首先您需要一個轉換網站在大網路上撰寫程式碼即可完成  轉換網站：https://www.binaryhexconverter.com/hex-to-decimal-converter 程式： https://blog.jmaker.com.tw/irremotesend/";
+            }
+            else if(inputText ==="Arduino 電池供電"){
+                outputTextElement.innerText = "可以使用vin腳位將他接在電池正極gnd接負極";
+            }
+            else if(inputText ==="九九乘法表網站推薦"){
+                outputTextElement.innerText = "https://richard889488.github.io/sick99/";
+            }
+            else if(inputText ==="我好無聊可以去哪玩"){
+                outputTextElement.innerText = "https://richard889488.github.io/useless.github.io/";
+            }
+            else if(inputText ==="Arduino 電池供電"){
+                outputTextElement.innerText = "可以使用vin腳位將他接在電池正極gnd接負極";
+            }
+            else{
+                outputTextElement.innerText = "開發者時間不夠抱歉我還不會回答";
+
+
+            }
+                
+        }
+    </script>
+
+</body>
+</html>
